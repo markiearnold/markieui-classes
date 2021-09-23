@@ -1,0 +1,4 @@
+@mixin empty-cells($action: null) {
+  @include class-attr(empty-cells, hide, hide, $action);
+  @include class-attr(empty-cells, show, show, $action);
+}

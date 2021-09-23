@@ -1,0 +1,11 @@
+@mixin background-position($action: null) {
+  @include class-attr(background-position, left top, left-top, $action);
+  @include class-attr(background-position, left, left, $action);
+  @include class-attr(background-position, left bottom, left-bottom, $action);
+  @include class-attr(background-position, right top, right-top, $action);
+  @include class-attr(background-position, right, right, $action);
+  @include class-attr(background-position, right bottom, right-bottom, $action);
+  @include class-attr(background-position, center top, center-top, $action);
+  @include class-attr(background-position, center, center, $action);
+  @include class-attr(background-position, center, center-bottom, $action);
+}

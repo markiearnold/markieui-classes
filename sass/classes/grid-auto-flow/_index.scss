@@ -1,0 +1,33 @@
+$className: grid-auto-flow;
+
+@import "mixins";
+
+.#{$className} {
+  @include grid-auto-flow;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include grid-auto-flow($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include grid-auto-flow;
+}
+
+@include screen-md($className) {
+  @include grid-auto-flow;
+}
+
+@include screen-lg($className) {
+  @include grid-auto-flow;
+}
+
+@include screen-xl($className) {
+  @include grid-auto-flow;
+}
+
+@include screen-2xl($className) {
+  @include grid-auto-flow;
+}

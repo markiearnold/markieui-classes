@@ -1,0 +1,33 @@
+$className: word-spacing;
+
+@import "mixins";
+
+.#{$className} {
+  @include word-spacing;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include word-spacing($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include word-spacing;
+}
+
+@include screen-md($className) {
+  @include word-spacing;
+}
+
+@include screen-lg($className) {
+  @include word-spacing;
+}
+
+@include screen-xl($className) {
+  @include word-spacing;
+}
+
+@include screen-2xl($className) {
+  @include word-spacing;
+}

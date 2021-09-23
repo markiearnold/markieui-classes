@@ -1,0 +1,33 @@
+$className: overflow-x;
+
+@import "mixins";
+
+.#{$className} {
+  @include overflow-x;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include overflow-x($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include overflow-x;
+}
+
+@include screen-md($className) {
+  @include overflow-x;
+}
+
+@include screen-lg($className) {
+  @include overflow-x;
+}
+
+@include screen-xl($className) {
+  @include overflow-x;
+}
+
+@include screen-2xl($className) {
+  @include overflow-x;
+}

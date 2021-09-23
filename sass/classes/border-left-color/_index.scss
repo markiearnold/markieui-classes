@@ -1,0 +1,33 @@
+$className: border-l;
+
+@import "mixins";
+
+.#{$className} {
+  @include border-left-color;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include border-left-color($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include border-left-color;
+}
+
+@include screen-md($className) {
+  @include border-left-color;
+}
+
+@include screen-lg($className) {
+  @include border-left-color;
+}
+
+@include screen-xl($className) {
+  @include border-left-color;
+}
+
+@include screen-2xl($className) {
+  @include border-left-color;
+}

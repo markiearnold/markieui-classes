@@ -1,0 +1,33 @@
+$className: isolation;
+
+@import "mixins";
+
+.#{$className} {
+  @include isolation;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include isolation($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include isolation;
+}
+
+@include screen-md($className) {
+  @include isolation;
+}
+
+@include screen-lg($className) {
+  @include isolation;
+}
+
+@include screen-xl($className) {
+  @include isolation;
+}
+
+@include screen-2xl($className) {
+  @include isolation;
+}

@@ -1,0 +1,33 @@
+$className: break-inside;
+
+@import "mixins";
+
+.#{$className} {
+  @include break-inside;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include break-inside($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include break-inside;
+}
+
+@include screen-md($className) {
+  @include break-inside;
+}
+
+@include screen-lg($className) {
+  @include break-inside;
+}
+
+@include screen-xl($className) {
+  @include break-inside;
+}
+
+@include screen-2xl($className) {
+  @include break-inside;
+}

@@ -1,0 +1,8 @@
+@mixin align-self($action: null) {
+  @include class-attr(align-self, auto, auto, $action);
+  @include class-attr(align-self, stretch, stretch, $action);
+  @include class-attr(align-self, center, center, $action);
+  @include class-attr(align-self, flex-start, start, $action);
+  @include class-attr(align-self, flex-end, end, $action);
+  @include class-attr(align-self, baseline, baseline, $action);
+}

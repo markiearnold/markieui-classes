@@ -1,0 +1,33 @@
+$className: vertical-align;
+
+@import "mixins";
+
+.#{$className} {
+  @include vertical-align;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include vertical-align($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include vertical-align;
+}
+
+@include screen-md($className) {
+  @include vertical-align;
+}
+
+@include screen-lg($className) {
+  @include vertical-align;
+}
+
+@include screen-xl($className) {
+  @include vertical-align;
+}
+
+@include screen-2xl($className) {
+  @include vertical-align;
+}

@@ -1,0 +1,33 @@
+$className: visibility;
+
+@import "mixins";
+
+.#{$className} {
+  @include visibility;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include visibility($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include visibility;
+}
+
+@include screen-md($className) {
+  @include visibility;
+}
+
+@include screen-lg($className) {
+  @include visibility;
+}
+
+@include screen-xl($className) {
+  @include visibility;
+}
+
+@include screen-2xl($className) {
+  @include visibility;
+}

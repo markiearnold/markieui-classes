@@ -1,0 +1,7 @@
+@mixin margin-right($action: null) {
+  @include class-attr(margin-right, auto, auto, $action);
+
+  @each $index, $value in $spacing {
+    @include class-attr(margin-right, $value, $index, $action);
+  }
+}

@@ -1,0 +1,6 @@
+@mixin word-break($action: null) {
+  @include class-attr(word-break, normal, normal, $action);
+  @include class-attr(word-break, break-all, break-all, $action);
+  @include class-attr(word-break, keep-all, keep-all, $action);
+  @include class-attr(word-break, break-word, break-word, $action);
+}

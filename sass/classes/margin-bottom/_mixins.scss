@@ -1,0 +1,7 @@
+@mixin margin-bottom($action: null) {
+  @include class-attr(margin-bottom, auto, auto, $action);
+
+  @each $index, $value in $spacing {
+    @include class-attr(margin-bottom, $value, $index, $action);
+  }
+}

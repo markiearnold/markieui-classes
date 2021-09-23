@@ -1,0 +1,33 @@
+$className: border-t;
+
+@import "mixins";
+
+.#{$className} {
+  @include border-top-color;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include border-top-color($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include border-top-color;
+}
+
+@include screen-md($className) {
+  @include border-top-color;
+}
+
+@include screen-lg($className) {
+  @include border-top-color;
+}
+
+@include screen-xl($className) {
+  @include border-top-color;
+}
+
+@include screen-2xl($className) {
+  @include border-top-color;
+}

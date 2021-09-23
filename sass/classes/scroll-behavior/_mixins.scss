@@ -1,0 +1,4 @@
+@mixin scroll-behavior($action: null) {
+  @include class-attr(scroll-behavior, auto, auto, $action);
+  @include class-attr(scroll-behavior, smooth, smooth, $action);
+}

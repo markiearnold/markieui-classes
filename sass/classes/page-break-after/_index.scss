@@ -1,0 +1,33 @@
+$className: page-break-after;
+
+@import "mixins";
+
+.#{$className} {
+  @include page-break-after;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include page-break-after($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include page-break-after;
+}
+
+@include screen-md($className) {
+  @include page-break-after;
+}
+
+@include screen-lg($className) {
+  @include page-break-after;
+}
+
+@include screen-xl($className) {
+  @include page-break-after;
+}
+
+@include screen-2xl($className) {
+  @include page-break-after;
+}

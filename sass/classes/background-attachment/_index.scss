@@ -1,0 +1,33 @@
+$className: bg;
+
+@import "mixins";
+
+.#{$className} {
+  @include background-attachment;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include background-attachment($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include background-attachment;
+}
+
+@include screen-md($className) {
+  @include background-attachment;
+}
+
+@include screen-lg($className) {
+  @include background-attachment;
+}
+
+@include screen-xl($className) {
+  @include background-attachment;
+}
+
+@include screen-2xl($className) {
+  @include background-attachment;
+}

@@ -1,0 +1,13 @@
+@mixin unicode-bidi($action: null) {
+  @include class-attr(unicode-bidi, normal, normal, $action);
+  @include class-attr(unicode-bidi, embed, embed, $action);
+  @include class-attr(unicode-bidi, bidi-override, bidi-override, $action);
+  @include class-attr(unicode-bidi, isolate, isolate, $action);
+  @include class-attr(
+    unicode-bidi,
+    isolate-override,
+    isolate-override,
+    $action
+  );
+  @include class-attr(unicode-bidi, plaintext, plaintext, $action);
+}

@@ -1,0 +1,4 @@
+@mixin table-layout($action: null) {
+  @include class-attr(table-layout, auto, auto, $action);
+  @include class-attr(table-layout, fixed, fixed, $action);
+}

@@ -1,0 +1,9 @@
+@mixin text-align-last($action: null) {
+  @include class-attr(text-align-last, auto, auto, $action);
+  @include class-attr(text-align-last, left, left, $action);
+  @include class-attr(text-align-last, right, right, $action);
+  @include class-attr(text-align-last, center, center, $action);
+  @include class-attr(text-align-last, justify, justify, $action);
+  @include class-attr(text-align-last, start, start, $action);
+  @include class-attr(text-align-last, end, end, $action);
+}

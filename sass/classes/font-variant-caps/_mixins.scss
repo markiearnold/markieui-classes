@@ -1,0 +1,17 @@
+@mixin font-variant-caps($action: null) {
+  @include class-attr(
+    font-variant-caps,
+    all-small-caps,
+    all-small-caps,
+    $action
+  );
+  @include class-attr(font-variant-caps, petite-caps, petite-caps, $action);
+  @include class-attr(
+    font-variant-caps,
+    all-petite-caps,
+    all-petite-caps,
+    $action
+  );
+  @include class-attr(font-variant-caps, unicase, unicase, $action);
+  @include class-attr(font-variant-caps, titling-caps, titling-caps, $action);
+}

@@ -1,0 +1,34 @@
+@mixin list-style-type($action: null) {
+  @include class-attr(list-style-type, disc, disc, $action);
+  @include class-attr(list-style-type, armenian, armenian, $action);
+  @include class-attr(list-style-type, circle, circle, $action);
+  @include class-attr(
+    list-style-type,
+    cjk-ideographic,
+    cjk-ideographic,
+    $action
+  );
+  @include class-attr(list-style-type, decimal, decimal, $action);
+  @include class-attr(
+    list-style-type,
+    decimal-leading-zero,
+    decimal-leading-zero,
+    $action
+  );
+  @include class-attr(list-style-type, georgian, georgian, $action);
+  @include class-attr(list-style-type, hebrew, hebrew, $action);
+  @include class-attr(list-style-type, hiragana, hiragana, $action);
+  @include class-attr(list-style-type, hiragana-iroha, hiragana-iroha, $action);
+  @include class-attr(list-style-type, katakana, katakana, $action);
+  @include class-attr(list-style-type, katakana-iroha, katakana-iroha, $action);
+  @include class-attr(list-style-type, lower-alpha, lower-alpha, $action);
+  @include class-attr(list-style-type, lower-greek, lower-greek, $action);
+  @include class-attr(list-style-type, lower-latin, lower-latin, $action);
+  @include class-attr(list-style-type, lower-roman, lower-roman, $action);
+  @include class-attr(list-style-type, none, none, $action);
+  @include class-attr(list-style-type, square, square, $action);
+  @include class-attr(list-style-type, upper-alpha, upper-alpha, $action);
+  @include class-attr(list-style-type, upper-greek, upper-greek, $action);
+  @include class-attr(list-style-type, upper-latin, upper-latin, $action);
+  @include class-attr(list-style-type, upper-roman, upper-roman, $action);
+}

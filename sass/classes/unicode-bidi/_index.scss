@@ -1,0 +1,33 @@
+$className: unicode-bidi;
+
+@import "mixins";
+
+.#{$className} {
+  @include unicode-bidi;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include unicode-bidi($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include unicode-bidi;
+}
+
+@include screen-md($className) {
+  @include unicode-bidi;
+}
+
+@include screen-lg($className) {
+  @include unicode-bidi;
+}
+
+@include screen-xl($className) {
+  @include unicode-bidi;
+}
+
+@include screen-2xl($className) {
+  @include unicode-bidi;
+}

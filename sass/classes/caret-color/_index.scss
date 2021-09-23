@@ -1,0 +1,33 @@
+$className: caret;
+
+@import "mixins";
+
+.#{$className} {
+  @include caret-color;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include caret-color($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include caret-color;
+}
+
+@include screen-md($className) {
+  @include caret-color;
+}
+
+@include screen-lg($className) {
+  @include caret-color;
+}
+
+@include screen-xl($className) {
+  @include caret-color;
+}
+
+@include screen-2xl($className) {
+  @include caret-color;
+}

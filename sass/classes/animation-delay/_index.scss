@@ -1,0 +1,33 @@
+$className: anim-delay;
+
+@import "mixins";
+
+.#{$className} {
+  @include animation-delay;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include animation-delay($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include animation-delay;
+}
+
+@include screen-md($className) {
+  @include animation-delay;
+}
+
+@include screen-lg($className) {
+  @include animation-delay;
+}
+
+@include screen-xl($className) {
+  @include animation-delay;
+}
+
+@include screen-2xl($className) {
+  @include animation-delay;
+}

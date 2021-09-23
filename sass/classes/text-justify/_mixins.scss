@@ -1,0 +1,6 @@
+@mixin text-justify($action: null) {
+  @include class-attr(text-justify, auto, auto, $action);
+  @include class-attr(text-justify, inter-word, inter-word, $action);
+  @include class-attr(text-justify, inter-character, inter-character, $action);
+  @include class-attr(text-justify, none, none, $action);
+}

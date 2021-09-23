@@ -1,0 +1,9 @@
+@mixin max-width($action: null) {
+  @each $index, $value in $max-sizing {
+    @include class-attr(max-width, $value, $index, $action);
+  }
+
+  @each $index, $value in $screen {
+    @include class-attr(max-width, $value, $index, $action);
+  }
+}

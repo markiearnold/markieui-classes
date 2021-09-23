@@ -1,0 +1,4 @@
+@mixin column-span($action: null) {
+  @include class-attr(column-span, all, all, $action);
+  @include class-attr(column-span, none, none, $action);
+}

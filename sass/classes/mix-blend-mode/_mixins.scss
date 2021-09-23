@@ -1,0 +1,15 @@
+@mixin mix-blend-mode($action: null) {
+  @include class-attr(mix-blend-mode, normal, normal, $action);
+  @include class-attr(mix-blend-mode, multiply, multiply, $action);
+  @include class-attr(mix-blend-mode, screen, screen, $action);
+  @include class-attr(mix-blend-mode, overlay, overlay, $action);
+  @include class-attr(mix-blend-mode, darken, darken, $action);
+  @include class-attr(mix-blend-mode, lighten, lighten, $action);
+  @include class-attr(mix-blend-mode, color-dodge, color-dodge, $action);
+  @include class-attr(mix-blend-mode, color-burn, color-burn, $action);
+  @include class-attr(mix-blend-mode, difference, difference, $action);
+  @include class-attr(mix-blend-mode, exclusion, exclusion, $action);
+  @include class-attr(mix-blend-mode, hue, hue, $action);
+  @include class-attr(mix-blend-mode, saturation, saturation, $action);
+  @include class-attr(mix-blend-mode, luminosity, luminosity, $action);
+}

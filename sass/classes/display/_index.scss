@@ -1,0 +1,33 @@
+$className: d;
+
+@import "mixins";
+
+.#{$className} {
+  @include display;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include display($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include display;
+}
+
+@include screen-md($className) {
+  @include display;
+}
+
+@include screen-lg($className) {
+  @include display;
+}
+
+@include screen-xl($className) {
+  @include display;
+}
+
+@include screen-2xl($className) {
+  @include display;
+}

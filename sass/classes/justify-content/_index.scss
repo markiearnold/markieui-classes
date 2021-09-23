@@ -1,0 +1,33 @@
+$className: justify;
+
+@import "mixins";
+
+.#{$className} {
+  @include justify-content;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include justify-content($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include justify-content;
+}
+
+@include screen-md($className) {
+  @include justify-content;
+}
+
+@include screen-lg($className) {
+  @include justify-content;
+}
+
+@include screen-xl($className) {
+  @include justify-content;
+}
+
+@include screen-2xl($className) {
+  @include justify-content;
+}

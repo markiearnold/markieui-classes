@@ -1,0 +1,11 @@
+@mixin font-stretch($action: null) {
+  @include class-attr(font-stretch, ultra-condensed, ultra-condensed, $action);
+  @include class-attr(font-stretch, extra-condensed, extra-condensed, $action);
+  @include class-attr(font-stretch, condensed, condensed, $action);
+  @include class-attr(font-stretch, semi-condensed, semi-condensed, $action);
+  @include class-attr(font-stretch, normal, normal, $action);
+  @include class-attr(font-stretch, semi-expanded, semi-expanded, $action);
+  @include class-attr(font-stretch, expanded, expanded, $action);
+  @include class-attr(font-stretch, extra-expanded, extra-expanded, $action);
+  @include class-attr(font-stretch, ultra-expanded, ultra-expanded, $action);
+}

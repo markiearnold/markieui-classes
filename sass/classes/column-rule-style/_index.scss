@@ -1,0 +1,33 @@
+$className: col-rule;
+
+@import "mixins";
+
+.#{$className} {
+  @include column-rule-style;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include column-rule-style($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include column-rule-style;
+}
+
+@include screen-md($className) {
+  @include column-rule-style;
+}
+
+@include screen-lg($className) {
+  @include column-rule-style;
+}
+
+@include screen-xl($className) {
+  @include column-rule-style;
+}
+
+@include screen-2xl($className) {
+  @include column-rule-style;
+}

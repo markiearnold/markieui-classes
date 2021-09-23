@@ -1,0 +1,33 @@
+$className: py;
+
+@import "mixins";
+
+.#{$className} {
+  @include padding-y;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include padding-y($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include padding-y;
+}
+
+@include screen-md($className) {
+  @include padding-y;
+}
+
+@include screen-lg($className) {
+  @include padding-y;
+}
+
+@include screen-xl($className) {
+  @include padding-y;
+}
+
+@include screen-2xl($className) {
+  @include padding-y;
+}

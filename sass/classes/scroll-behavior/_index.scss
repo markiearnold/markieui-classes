@@ -1,0 +1,33 @@
+$className: scroll-behavior;
+
+@import "mixins";
+
+.#{$className} {
+  @include scroll-behavior;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include scroll-behavior($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include scroll-behavior;
+}
+
+@include screen-md($className) {
+  @include scroll-behavior;
+}
+
+@include screen-lg($className) {
+  @include scroll-behavior;
+}
+
+@include screen-xl($className) {
+  @include scroll-behavior;
+}
+
+@include screen-2xl($className) {
+  @include scroll-behavior;
+}

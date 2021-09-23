@@ -1,0 +1,4 @@
+@mixin user-select($action: null) {
+  @include class-attr(user-select, auto, auto, $action);
+  @include class-attr(user-select, none, none, $action);
+}

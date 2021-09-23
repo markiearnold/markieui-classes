@@ -1,0 +1,33 @@
+$className: object;
+
+@import "mixins";
+
+.#{$className} {
+  @include object-fit;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include object-fit($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include object-fit;
+}
+
+@include screen-md($className) {
+  @include object-fit;
+}
+
+@include screen-lg($className) {
+  @include object-fit;
+}
+
+@include screen-xl($className) {
+  @include object-fit;
+}
+
+@include screen-2xl($className) {
+  @include object-fit;
+}

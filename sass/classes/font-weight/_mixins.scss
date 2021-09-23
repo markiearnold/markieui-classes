@@ -1,0 +1,18 @@
+@mixin font-weight($action: null) {
+  @include class-attr(font-weight, 100, lighter, $action);
+  @include class-attr(font-weight, 300, light, $action);
+  @include class-attr(font-weight, 400, null, $action);
+  @include class-attr(font-weight, 400, normal, $action);
+  @include class-attr(font-weight, 600, bold, $action);
+  @include class-attr(font-weight, 700, bolder, $action);
+
+  @include class-attr(font-weight, 100, 100, $action);
+  @include class-attr(font-weight, 200, 200, $action);
+  @include class-attr(font-weight, 300, 300, $action);
+  @include class-attr(font-weight, 400, 400, $action);
+  @include class-attr(font-weight, 500, 500, $action);
+  @include class-attr(font-weight, 600, 600, $action);
+  @include class-attr(font-weight, 700, 700, $action);
+  @include class-attr(font-weight, 800, 800, $action);
+  @include class-attr(font-weight, 900, 900, $action);
+}

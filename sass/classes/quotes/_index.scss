@@ -1,0 +1,33 @@
+$className: quotes;
+
+@import "mixins";
+
+.#{$className} {
+  @include quotes;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include quotes($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include quotes;
+}
+
+@include screen-md($className) {
+  @include quotes;
+}
+
+@include screen-lg($className) {
+  @include quotes;
+}
+
+@include screen-xl($className) {
+  @include quotes;
+}
+
+@include screen-2xl($className) {
+  @include quotes;
+}

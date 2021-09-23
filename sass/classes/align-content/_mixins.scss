@@ -1,0 +1,9 @@
+@mixin align-content($action: null) {
+  @include class-attr(align-content, stretch, stretch, $action);
+  @include class-attr(align-content, center, center, $action);
+  @include class-attr(align-content, flex-start, start, $action);
+  @include class-attr(align-content, flex-end, end, $action);
+  @include class-attr(align-content, space-between, between, $action);
+  @include class-attr(align-content, space-around, around, $action);
+  @include class-attr(align-content, space-evenly, evenly, $action);
+}

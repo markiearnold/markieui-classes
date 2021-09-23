@@ -1,0 +1,4 @@
+@mixin transform-property($action: null) {
+  @include class-attr(transform-property, none, none, $action);
+  @include class-attr(transform-property, all, all, $action);
+}

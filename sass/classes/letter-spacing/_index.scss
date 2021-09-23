@@ -1,0 +1,33 @@
+$className: tracking;
+
+@import "mixins";
+
+.#{$className} {
+  @include letter-spacing;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include letter-spacing($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include letter-spacing;
+}
+
+@include screen-md($className) {
+  @include letter-spacing;
+}
+
+@include screen-lg($className) {
+  @include letter-spacing;
+}
+
+@include screen-xl($className) {
+  @include letter-spacing;
+}
+
+@include screen-2xl($className) {
+  @include letter-spacing;
+}

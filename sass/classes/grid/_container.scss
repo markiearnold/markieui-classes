@@ -1,0 +1,29 @@
+$difference: 1.2;
+
+.container {
+  width: 100%;
+  margin-right: auto;
+  margin-left: auto;
+  padding-left: $spacing_4;
+  padding-right: $spacing_4;
+
+  @media (min-width: $screen_sm) {
+    max-width: $screen_sm / $difference;
+  }
+
+  @media (min-width: $screen_md) {
+    max-width: $screen_md / $difference;
+  }
+
+  @media (min-width: $screen_lg) {
+    max-width: $screen_lg / $difference;
+  }
+
+  @media (min-width: $screen_xl) {
+    max-width: $screen_xl / $difference;
+  }
+
+  @media (min-width: $screen_2xl) {
+    max-width: $screen_2xl / $difference;
+  }
+}

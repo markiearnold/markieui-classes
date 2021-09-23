@@ -1,0 +1,4 @@
+@mixin list-style-position($action: null) {
+  @include class-attr(list-style-position, inside, inside, $action);
+  @include class-attr(list-style-position, outside, outside, $action);
+}

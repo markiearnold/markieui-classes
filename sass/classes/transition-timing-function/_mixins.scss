@@ -1,0 +1,19 @@
+@mixin transition-timing-function($action: null) {
+  @include class-attr(transition-timing-function, ease, ease, $action);
+  @include class-attr(transition-timing-function, linear, linear, $action);
+  @include class-attr(transition-timing-function, ease-in, ease-in, $action);
+  @include class-attr(transition-timing-function, ease-out, ease-out, $action);
+  @include class-attr(
+    transition-timing-function,
+    ease-in-out,
+    ease-in-out,
+    $action
+  );
+  @include class-attr(
+    transition-timing-function,
+    step-start,
+    step-start,
+    $action
+  );
+  @include class-attr(transition-timing-function, step-end, step-end, $action);
+}

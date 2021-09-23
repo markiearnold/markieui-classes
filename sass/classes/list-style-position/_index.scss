@@ -1,0 +1,33 @@
+$className: list;
+
+@import "mixins";
+
+.#{$className} {
+  @include list-style-position;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include list-style-position($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include list-style-position;
+}
+
+@include screen-md($className) {
+  @include list-style-position;
+}
+
+@include screen-lg($className) {
+  @include list-style-position;
+}
+
+@include screen-xl($className) {
+  @include list-style-position;
+}
+
+@include screen-2xl($className) {
+  @include list-style-position;
+}

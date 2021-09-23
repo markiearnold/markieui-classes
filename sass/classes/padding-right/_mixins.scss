@@ -1,0 +1,7 @@
+@mixin padding-right($action: null) {
+  @include class-attr(padding-right, auto, auto, $action);
+
+  @each $index, $value in $spacing {
+    @include class-attr(padding-right, $value, $index, $action);
+  }
+}

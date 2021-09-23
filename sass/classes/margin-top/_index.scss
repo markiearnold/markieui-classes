@@ -1,0 +1,77 @@
+$className: mt;
+
+@import "mixins";
+
+.#{$className} {
+  @include margin-top;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include margin-top($value);
+  }
+}
+
+@each $aindex, $avalue in $actions {
+  @each $index, $value in $spacing_negative {
+    .#{$aindex}__-#{$className} {
+      @include class-attr(margin-top, $value, $index, null);
+    }
+  }
+}
+
+@each $index, $value in $spacing_negative {
+  .-#{$className} {
+    @include class-attr(margin-top, $value, $index, null);
+  }
+}
+
+@include screen-sm($className) {
+  @include margin-top;
+}
+
+@include screen-sm(-#{$className}) {
+  @each $index, $value in $spacing_negative {
+    @include class-attr(margin-top, $value, $index, null);
+  }
+}
+
+@include screen-md($className) {
+  @include margin-top;
+}
+
+@include screen-md(-#{$className}) {
+  @each $index, $value in $spacing_negative {
+    @include class-attr(margin-top, $value, $index, null);
+  }
+}
+
+@include screen-lg($className) {
+  @include margin-top;
+}
+
+@include screen-lg(-#{$className}) {
+  @each $index, $value in $spacing_negative {
+    @include class-attr(margin-top, $value, $index, null);
+  }
+}
+
+@include screen-xl($className) {
+  @include margin-top;
+}
+
+@include screen-xl(-#{$className}) {
+  @each $index, $value in $spacing_negative {
+    @include class-attr(margin-top, $value, $index, null);
+  }
+}
+
+@include screen-2xl($className) {
+  @include margin-top;
+}
+
+@include screen-2xl(-#{$className}) {
+  @each $index, $value in $spacing_negative {
+    @include class-attr(margin-top, $value, $index, null);
+  }
+}

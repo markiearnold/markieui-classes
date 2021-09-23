@@ -1,0 +1,4 @@
+@mixin column-fill($action: null) {
+  @include class-attr(column-fill, auto, auto, $action);
+  @include class-attr(column-fill, balance, balance, $action);
+}

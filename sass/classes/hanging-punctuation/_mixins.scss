@@ -1,0 +1,7 @@
+@mixin hanging-punctuation($action: null) {
+  @include class-attr(hanging-punctuation, none, none, $action);
+  @include class-attr(hanging-punctuation, first, first, $action);
+  @include class-attr(hanging-punctuation, last, last, $action);
+  @include class-attr(hanging-punctuation, allow-end, allow-end, $action);
+  @include class-attr(hanging-punctuation, force-end, force-end, $action);
+}

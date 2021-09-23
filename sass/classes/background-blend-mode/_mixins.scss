@@ -1,0 +1,12 @@
+@mixin background-blend-mode($action: null) {
+  @include class-attr(background-blend-mode, normal, normal, $action);
+  @include class-attr(background-blend-mode, multiply, multiply, $action);
+  @include class-attr(background-blend-mode, screen, screen, $action);
+  @include class-attr(background-blend-mode, overlay, overlay, $action);
+  @include class-attr(background-blend-mode, darken, darken, $action);
+  @include class-attr(background-blend-mode, lighten, lighten, $action);
+  @include class-attr(background-blend-mode, color-dodge, color-dodge, $action);
+  @include class-attr(background-blend-mode, saturation, saturation, $action);
+  @include class-attr(background-blend-mode, color, color, $action);
+  @include class-attr(background-blend-mode, luminosity, luminosity, $action);
+}

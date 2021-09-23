@@ -1,0 +1,33 @@
+$className: resize;
+
+@import "mixins";
+
+.#{$className} {
+  @include resize;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include resize($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include resize;
+}
+
+@include screen-md($className) {
+  @include resize;
+}
+
+@include screen-lg($className) {
+  @include resize;
+}
+
+@include screen-xl($className) {
+  @include resize;
+}
+
+@include screen-2xl($className) {
+  @include resize;
+}

@@ -1,0 +1,5 @@
+@mixin transition-duration($action: null) {
+  @each $index, $value in $timing {
+    @include class-attr(transition-duration, #{$value}, $index, $action);
+  }
+}

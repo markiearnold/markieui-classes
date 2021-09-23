@@ -1,0 +1,12 @@
+@mixin column-rule-style($action: null) {
+  @include class-attr(column-rule-style, none, none, $action);
+  @include class-attr(column-rule-style, hidden, hidden, $action);
+  @include class-attr(column-rule-style, dotted, dotted, $action);
+  @include class-attr(column-rule-style, dashed, dashed, $action);
+  @include class-attr(column-rule-style, solid, solid, $action);
+  @include class-attr(column-rule-style, double, double, $action);
+  @include class-attr(column-rule-style, groove, groove, $action);
+  @include class-attr(column-rule-style, ridge, ridge, $action);
+  @include class-attr(column-rule-style, inset, inset, $action);
+  @include class-attr(column-rule-style, outset, outset, $action);
+}

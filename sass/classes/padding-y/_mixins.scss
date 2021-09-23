@@ -1,0 +1,42 @@
+// Cannot use class-attr mixin due to multiple attributes.
+
+@mixin padding-y($action: null) {
+  &-auto {
+    padding-top: auto;
+    padding-bottom: auto;
+  }
+
+  @each $index, $value in $spacing {
+    @if $action == "before" {
+      &-#{$index} {
+        &::before {
+          content: "";
+          padding-top: $value;
+          padding-bottom: $value;
+        }
+      }
+    } @else {
+      @if $action == "after" {
+        &::after {
+          content: "";
+          padding-top: $value;
+          padding-bottom: $value;
+        }
+      } @else {
+        @if $action {
+          &-#{$index} {
+            &:#{$action} {
+              padding-top: $value;
+              padding-bottom: $value;
+            }
+          }
+        } @else {
+          &-#{$index} {
+            padding-top: $value;
+            padding-bottom: $value;
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,8 @@
+@mixin max-height($action: null) {
+  @include class-attr(max-height, 100%, full, $action);
+  @include class-attr(max-height, 100vh, screen, $action);
+
+  @each $index, $value in $max-sizing {
+    @include class-attr(max-height, $value, $index, $action);
+  }
+}

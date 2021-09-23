@@ -1,0 +1,33 @@
+$className: user-select;
+
+@import "mixins";
+
+.#{$className} {
+  @include user-select;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include user-select($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include user-select;
+}
+
+@include screen-md($className) {
+  @include user-select;
+}
+
+@include screen-lg($className) {
+  @include user-select;
+}
+
+@include screen-xl($className) {
+  @include user-select;
+}
+
+@include screen-2xl($className) {
+  @include user-select;
+}

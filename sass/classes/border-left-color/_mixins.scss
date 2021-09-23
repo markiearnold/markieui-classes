@@ -1,0 +1,12 @@
+@mixin border-left-color($action: null) {
+  @include class-attr(border-left-color, $white, white, $action);
+  @include class-attr(border-left-color, $black, black, $action);
+
+  @each $color, $array in $colors {
+    &-#{$color} {
+      @each $index, $value in $array {
+        @include class-attr(border-left-color, $value, $index, $action);
+      }
+    }
+  }
+}

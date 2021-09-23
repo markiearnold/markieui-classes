@@ -1,0 +1,11 @@
+@mixin text-decoration-line($action: null) {
+  @include class-attr(text-decoration-line, none, none, $action);
+  @include class-attr(text-decoration-line, underline, underline, $action);
+  @include class-attr(text-decoration-line, overline, overline, $action);
+  @include class-attr(
+    text-decoration-line,
+    line-through,
+    line-through,
+    $action
+  );
+}

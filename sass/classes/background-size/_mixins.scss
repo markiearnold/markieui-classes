@@ -1,0 +1,5 @@
+@mixin background-size($action: null) {
+  @include class-attr(background-size, auto, auto, $action);
+  @include class-attr(background-size, cover, cover, $action);
+  @include class-attr(background-size, contain, contain, $action);
+}

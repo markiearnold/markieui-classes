@@ -1,0 +1,4 @@
+@mixin word-wrap($action: null) {
+  @include class-attr(word-wrap, normal, normal, $action);
+  @include class-attr(word-wrap, break-word, break-word, $action);
+}

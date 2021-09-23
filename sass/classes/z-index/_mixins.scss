@@ -1,0 +1,7 @@
+@mixin z-index($action: null) {
+  @include class-attr(z-index, auto, auto, $action);
+
+  @each $index, $value in $z_index {
+    @include class-attr(z-index, $value, $index, $action);
+  }
+}

@@ -1,0 +1,33 @@
+$className: opacity;
+
+@import "mixins";
+
+.#{$className} {
+  @include opacity;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include opacity($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include opacity;
+}
+
+@include screen-md($className) {
+  @include opacity;
+}
+
+@include screen-lg($className) {
+  @include opacity;
+}
+
+@include screen-xl($className) {
+  @include opacity;
+}
+
+@include screen-2xl($className) {
+  @include opacity;
+}

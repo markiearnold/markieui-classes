@@ -1,0 +1,5 @@
+@mixin writing-mode($action: null) {
+  @include class-attr(writing-mode, horizontal-tb, horizontal-tb, $action);
+  @include class-attr(writing-mode, vertical-rl, vertical-rl, $action);
+  @include class-attr(writing-mode, vertical-lr, vertical-lr, $action);
+}

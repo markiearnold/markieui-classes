@@ -1,0 +1,33 @@
+$className: word-wrap;
+
+@import "mixins";
+
+.#{$className} {
+  @include word-wrap;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include word-wrap($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include word-wrap;
+}
+
+@include screen-md($className) {
+  @include word-wrap;
+}
+
+@include screen-lg($className) {
+  @include word-wrap;
+}
+
+@include screen-xl($className) {
+  @include word-wrap;
+}
+
+@include screen-2xl($className) {
+  @include word-wrap;
+}

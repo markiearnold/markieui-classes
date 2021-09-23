@@ -1,0 +1,7 @@
+@mixin white-space($action: null) {
+  @include class-attr(white-space, normal, normal, $action);
+  @include class-attr(white-space, nowrap, nowrap, $action);
+  @include class-attr(white-space, pre, pre, $action);
+  @include class-attr(white-space, pre-line, pre-line, $action);
+  @include class-attr(white-space, pre-wrap, pre-wrap, $action);
+}

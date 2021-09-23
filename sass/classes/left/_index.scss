@@ -1,0 +1,77 @@
+$className: left;
+
+@import "mixins";
+
+.#{$className} {
+  @include left;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include left($value);
+  }
+}
+
+@each $aindex, $avalue in $actions {
+  @each $index, $value in $spacing_negative {
+    .#{$aindex}__-#{$className} {
+      @include class-attr(left, $value, $index, null);
+    }
+  }
+}
+
+@each $index, $value in $spacing_negative {
+  .-#{$className} {
+    @include class-attr(left, $value, $index, null);
+  }
+}
+
+@include screen-sm($className) {
+  @include left;
+}
+
+@include screen-sm(-#{$className}) {
+  @each $index, $value in $spacing_negative {
+    @include class-attr(left, $value, $index, null);
+  }
+}
+
+@include screen-md($className) {
+  @include left;
+}
+
+@include screen-md(-#{$className}) {
+  @each $index, $value in $spacing_negative {
+    @include class-attr(left, $value, $index, null);
+  }
+}
+
+@include screen-lg($className) {
+  @include left;
+}
+
+@include screen-lg(-#{$className}) {
+  @each $index, $value in $spacing_negative {
+    @include class-attr(left, $value, $index, null);
+  }
+}
+
+@include screen-xl($className) {
+  @include left;
+}
+
+@include screen-xl(-#{$className}) {
+  @each $index, $value in $spacing_negative {
+    @include class-attr(left, $value, $index, null);
+  }
+}
+
+@include screen-2xl($className) {
+  @include left;
+}
+
+@include screen-2xl(-#{$className}) {
+  @each $index, $value in $spacing_negative {
+    @include class-attr(left, $value, $index, null);
+  }
+}

@@ -1,0 +1,33 @@
+$className: transform-property;
+
+@import "mixins";
+
+.#{$className} {
+  @include transform-property;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include transform-property($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include transform-property;
+}
+
+@include screen-md($className) {
+  @include transform-property;
+}
+
+@include screen-lg($className) {
+  @include transform-property;
+}
+
+@include screen-xl($className) {
+  @include transform-property;
+}
+
+@include screen-2xl($className) {
+  @include transform-property;
+}

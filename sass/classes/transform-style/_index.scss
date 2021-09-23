@@ -1,0 +1,33 @@
+$className: transform-style;
+
+@import "mixins";
+
+.#{$className} {
+  @include transform-style;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include transform-style($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include transform-style;
+}
+
+@include screen-md($className) {
+  @include transform-style;
+}
+
+@include screen-lg($className) {
+  @include transform-style;
+}
+
+@include screen-xl($className) {
+  @include transform-style;
+}
+
+@include screen-2xl($className) {
+  @include transform-style;
+}

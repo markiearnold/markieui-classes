@@ -1,0 +1,14 @@
+@mixin break-after($action: null) {
+  @include class-attr(break-after, auto, auto, $action);
+  @include class-attr(break-after, all, all, $action);
+  @include class-attr(break-after, always, always, $action);
+  @include class-attr(break-after, avoid, avoid, $action);
+  @include class-attr(break-after, avoid-column, avoid-column, $action);
+  @include class-attr(break-after, avoid-page, avoid-page, $action);
+  @include class-attr(break-after, avoid-region, avoid-region, $action);
+  @include class-attr(break-after, column, column, $action);
+  @include class-attr(break-after, left, left, $action);
+  @include class-attr(break-after, page, page, $action);
+  @include class-attr(break-after, right, right, $action);
+  @include class-attr(break-after, verso, verso, $action);
+}

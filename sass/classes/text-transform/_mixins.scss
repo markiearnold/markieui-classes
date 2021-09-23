@@ -1,0 +1,6 @@
+@mixin text-transform($action: null) {
+  @include class-attr(text-transform, none, none, $action);
+  @include class-attr(text-transform, capitalize, capitalize, $action);
+  @include class-attr(text-transform, uppercase, uppercase, $action);
+  @include class-attr(text-transform, lowercase, lowercase, $action);
+}

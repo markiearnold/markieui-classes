@@ -1,0 +1,33 @@
+$className: transition;
+
+@import "mixins";
+
+.#{$className} {
+  @include transition-timing-function;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include transition-timing-function($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include transition-timing-function;
+}
+
+@include screen-md($className) {
+  @include transition-timing-function;
+}
+
+@include screen-lg($className) {
+  @include transition-timing-function;
+}
+
+@include screen-xl($className) {
+  @include transition-timing-function;
+}
+
+@include screen-2xl($className) {
+  @include transition-timing-function;
+}

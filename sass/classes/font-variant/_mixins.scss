@@ -1,0 +1,4 @@
+@mixin font-variant($action: null) {
+  @include class-attr(font-variant, normal, normal, $action);
+  @include class-attr(font-variant, small-caps, small-caps, $action);
+}

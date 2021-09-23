@@ -1,0 +1,33 @@
+$className: anim-direction;
+
+@import "mixins";
+
+.#{$className} {
+  @include animation-direction;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include animation-direction($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include animation-direction;
+}
+
+@include screen-md($className) {
+  @include animation-direction;
+}
+
+@include screen-lg($className) {
+  @include animation-direction;
+}
+
+@include screen-xl($className) {
+  @include animation-direction;
+}
+
+@include screen-2xl($className) {
+  @include animation-direction;
+}

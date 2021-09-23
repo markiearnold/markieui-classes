@@ -1,0 +1,4 @@
+@mixin animation-play-state($action: null) {
+  @include class-attr(animation-play-state, paused, paused, $action);
+  @include class-attr(animation-play-state, running, running, $action);
+}

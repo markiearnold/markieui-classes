@@ -1,0 +1,23 @@
+@mixin display($action: null) {
+  @include class-attr(display, inline, inline, $action);
+  @include class-attr(display, block, block, $action);
+  @include class-attr(display, contents, contents, $action);
+  @include class-attr(display, flex, flex, $action);
+  @include class-attr(display, grid, grid, $action);
+  @include class-attr(display, inline-block, inline-block, $action);
+  @include class-attr(display, inline-flex, inline-flex, $action);
+  @include class-attr(display, inline-grid, inline-grid, $action);
+  @include class-attr(display, inline-table, inline-table, $action);
+  @include class-attr(display, list-item, list-item, $action);
+  @include class-attr(display, run-in, run-in, $action);
+  @include class-attr(display, table, table, $action);
+  @include class-attr(display, table-caption, table-caption, $action);
+  @include class-attr(display, table-column-group, table-column-group, $action);
+  @include class-attr(display, table-header-group, table-header-group, $action);
+  @include class-attr(display, table-footer-group, table-footer-group, $action);
+  @include class-attr(display, table-row-group, table-row-group, $action);
+  @include class-attr(display, table-cell, table-cell, $action);
+  @include class-attr(display, table-column, table-column, $action);
+  @include class-attr(display, table-row, table-row, $action);
+  @include class-attr(display, none, none, $action);
+}

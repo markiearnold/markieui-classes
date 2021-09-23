@@ -1,0 +1,7 @@
+@mixin page-break-after($action: null) {
+  @include class-attr(page-break-after, auto, auto, $action);
+  @include class-attr(page-break-after, always, always, $action);
+  @include class-attr(page-break-after, avoid, avoid, $action);
+  @include class-attr(page-break-after, left, left, $action);
+  @include class-attr(page-break-after, right, right, $action);
+}

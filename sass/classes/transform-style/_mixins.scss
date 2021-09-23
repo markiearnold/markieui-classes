@@ -1,0 +1,4 @@
+@mixin transform-style($action: null) {
+  @include class-attr(transform-style, flat, flat, $action);
+  @include class-attr(transform-style, preserve-3d, preserve-3d, $action);
+}

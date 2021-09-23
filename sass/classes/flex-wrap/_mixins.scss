@@ -1,0 +1,5 @@
+@mixin flex-wrap($action: null) {
+  @include class-attr(flex-wrap, nowrap, nowrap, $action);
+  @include class-attr(flex-wrap, wrap, wrap, $action);
+  @include class-attr(flex-wrap, wrap-reverse, wrap-reverse, $action);
+}

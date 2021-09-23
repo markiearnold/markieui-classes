@@ -1,0 +1,33 @@
+$className: font-variant;
+
+@import "mixins";
+
+.#{$className} {
+  @include font-variant;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include font-variant($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include font-variant;
+}
+
+@include screen-md($className) {
+  @include font-variant;
+}
+
+@include screen-lg($className) {
+  @include font-variant;
+}
+
+@include screen-xl($className) {
+  @include font-variant;
+}
+
+@include screen-2xl($className) {
+  @include font-variant;
+}

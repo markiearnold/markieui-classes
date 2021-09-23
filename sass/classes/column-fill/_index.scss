@@ -1,0 +1,33 @@
+$className: col-fill;
+
+@import "mixins";
+
+.#{$className} {
+  @include column-fill;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include column-fill($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include column-fill;
+}
+
+@include screen-md($className) {
+  @include column-fill;
+}
+
+@include screen-lg($className) {
+  @include column-fill;
+}
+
+@include screen-xl($className) {
+  @include column-fill;
+}
+
+@include screen-2xl($className) {
+  @include column-fill;
+}

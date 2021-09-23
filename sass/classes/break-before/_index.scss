@@ -1,0 +1,33 @@
+$className: break-before;
+
+@import "mixins";
+
+.#{$className} {
+  @include break-before;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include break-before($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include break-before;
+}
+
+@include screen-md($className) {
+  @include break-before;
+}
+
+@include screen-lg($className) {
+  @include break-before;
+}
+
+@include screen-xl($className) {
+  @include break-before;
+}
+
+@include screen-2xl($className) {
+  @include break-before;
+}

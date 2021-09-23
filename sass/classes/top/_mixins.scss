@@ -1,0 +1,7 @@
+@mixin top($action: null) {
+  @include class-attr(top, auto, auto, $action);
+
+  @each $index, $value in $spacing {
+    @include class-attr(top, $value, $index, $action);
+  }
+}

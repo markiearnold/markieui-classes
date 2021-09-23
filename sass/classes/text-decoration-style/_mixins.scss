@@ -1,0 +1,7 @@
+@mixin text-decoration-style($action: null) {
+  @include class-attr(text-decoration-style, solid, solid, $action);
+  @include class-attr(text-decoration-style, double, double, $action);
+  @include class-attr(text-decoration-style, dotted, dotted, $action);
+  @include class-attr(text-decoration-style, dashed, dashed, $action);
+  @include class-attr(text-decoration-style, wavy, wavy, $action);
+}

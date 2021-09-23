@@ -1,0 +1,6 @@
+@mixin min-width($action: null) {
+  @include class-attr(min-width, 0px, 0, $action);
+  @include class-attr(min-width, 100%, full, $action);
+  @include class-attr(min-width, min-content, min-content, $action);
+  @include class-attr(min-width, max-content, max-content, $action);
+}

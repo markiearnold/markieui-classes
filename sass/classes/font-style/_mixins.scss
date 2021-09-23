@@ -1,0 +1,5 @@
+@mixin font-style($action: null) {
+  @include class-attr(font-style, normal, normal, $action);
+  @include class-attr(font-style, italic, italic, $action);
+  @include class-attr(font-style, oblique, oblique, $action);
+}

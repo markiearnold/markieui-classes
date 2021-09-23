@@ -1,0 +1,7 @@
+@mixin border-radius($action: null) {
+  @include class-attr(border-radius, $rounded_md, null, $action);
+
+  @each $index, $value in $border_radius {
+    @include class-attr(border-radius, $value, $index, $action);
+  }
+}

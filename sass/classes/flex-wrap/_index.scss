@@ -1,0 +1,33 @@
+$className: flex;
+
+@import "mixins";
+
+.#{$className} {
+  @include flex-wrap;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include flex-wrap($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include flex-wrap;
+}
+
+@include screen-md($className) {
+  @include flex-wrap;
+}
+
+@include screen-lg($className) {
+  @include flex-wrap;
+}
+
+@include screen-xl($className) {
+  @include flex-wrap;
+}
+
+@include screen-2xl($className) {
+  @include flex-wrap;
+}

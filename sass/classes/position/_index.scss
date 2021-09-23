@@ -1,0 +1,33 @@
+$className: position;
+
+@import "mixins";
+
+.#{$className} {
+  @include position;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include position($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include position;
+}
+
+@include screen-md($className) {
+  @include position;
+}
+
+@include screen-lg($className) {
+  @include position;
+}
+
+@include screen-xl($className) {
+  @include position;
+}
+
+@include screen-2xl($className) {
+  @include position;
+}

@@ -1,0 +1,8 @@
+@mixin clear($action: null) {
+  @include class-attr(clear, both, null, $action);
+
+  @include class-attr(clear, both, both, $action);
+  @include class-attr(clear, left, left, $action);
+  @include class-attr(clear, right, right, $action);
+  @include class-attr(clear, none, none, $action);
+}

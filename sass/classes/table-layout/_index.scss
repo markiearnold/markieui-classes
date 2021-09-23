@@ -1,0 +1,33 @@
+$className: table-layout;
+
+@import "mixins";
+
+.#{$className} {
+  @include table-layout;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include table-layout($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include table-layout;
+}
+
+@include screen-md($className) {
+  @include table-layout;
+}
+
+@include screen-lg($className) {
+  @include table-layout;
+}
+
+@include screen-xl($className) {
+  @include table-layout;
+}
+
+@include screen-2xl($className) {
+  @include table-layout;
+}

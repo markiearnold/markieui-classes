@@ -1,0 +1,33 @@
+$className: page-break-inside;
+
+@import "mixins";
+
+.#{$className} {
+  @include page-break-inside;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include page-break-inside($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include page-break-inside;
+}
+
+@include screen-md($className) {
+  @include page-break-inside;
+}
+
+@include screen-lg($className) {
+  @include page-break-inside;
+}
+
+@include screen-xl($className) {
+  @include page-break-inside;
+}
+
+@include screen-2xl($className) {
+  @include page-break-inside;
+}

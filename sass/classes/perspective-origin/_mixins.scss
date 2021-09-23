@@ -1,0 +1,7 @@
+@mixin perspective-origin($action: null) {
+  @include class-attr(perspective-origin, left, left, $action);
+  @include class-attr(perspective-origin, center, center, $action);
+  @include class-attr(perspective-origin, right, right, $action);
+  @include class-attr(perspective-origin, top, top, $action);
+  @include class-attr(perspective-origin, bottom, bottom, $action);
+}

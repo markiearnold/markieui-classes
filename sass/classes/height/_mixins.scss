@@ -1,0 +1,12 @@
+@mixin height($action: null) {
+  @include class-attr(height, auto, auto, $action);
+  @include class-attr(height, 100vh, screen, $action);
+
+  @each $index, $value in $spacing {
+    @include class-attr(height, $value, $index, $action);
+  }
+
+  @each $index, $value in $sizing {
+    @include class-attr(height, $value, $index, $action);
+  }
+}

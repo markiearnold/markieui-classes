@@ -1,0 +1,33 @@
+$className: pointer-events;
+
+@import "mixins";
+
+.#{$className} {
+  @include pointer-events;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include pointer-events($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include pointer-events;
+}
+
+@include screen-md($className) {
+  @include pointer-events;
+}
+
+@include screen-lg($className) {
+  @include pointer-events;
+}
+
+@include screen-xl($className) {
+  @include pointer-events;
+}
+
+@include screen-2xl($className) {
+  @include pointer-events;
+}

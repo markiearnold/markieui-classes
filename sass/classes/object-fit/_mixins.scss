@@ -1,0 +1,7 @@
+@mixin object-fit($action: null) {
+  @include class-attr(object-fit, fill, fill, $action);
+  @include class-attr(object-fit, contain, contain, $action);
+  @include class-attr(object-fit, cover, cover, $action);
+  @include class-attr(object-fit, none, none, $action);
+  @include class-attr(object-fit, scale-down, scale-down, $action);
+}

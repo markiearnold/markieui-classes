@@ -1,0 +1,33 @@
+$className: hyphens;
+
+@import "mixins";
+
+.#{$className} {
+  @include hyphens;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include hyphens($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include hyphens;
+}
+
+@include screen-md($className) {
+  @include hyphens;
+}
+
+@include screen-lg($className) {
+  @include hyphens;
+}
+
+@include screen-xl($className) {
+  @include hyphens;
+}
+
+@include screen-2xl($className) {
+  @include hyphens;
+}

@@ -1,0 +1,33 @@
+$className: float;
+
+@import "mixins";
+
+.#{$className} {
+  @include float;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include float($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include float;
+}
+
+@include screen-md($className) {
+  @include float;
+}
+
+@include screen-lg($className) {
+  @include float;
+}
+
+@include screen-xl($className) {
+  @include float;
+}
+
+@include screen-2xl($className) {
+  @include float;
+}

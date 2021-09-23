@@ -1,0 +1,33 @@
+$className: border;
+
+@import "mixins";
+
+.#{$className} {
+  @include border-width;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include border-width($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include border-width;
+}
+
+@include screen-md($className) {
+  @include border-width;
+}
+
+@include screen-lg($className) {
+  @include border-width;
+}
+
+@include screen-xl($className) {
+  @include border-width;
+}
+
+@include screen-2xl($className) {
+  @include border-width;
+}

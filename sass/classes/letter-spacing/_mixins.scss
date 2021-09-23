@@ -1,0 +1,7 @@
+@mixin letter-spacing($action: null) {
+  @include class-attr(letter-spacing, normal, normal, $action);
+
+  @each $index, $value in $letter-spacing {
+    @include class-attr(letter-spacing, $value, $index, $action);
+  }
+}

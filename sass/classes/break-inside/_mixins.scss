@@ -1,0 +1,7 @@
+@mixin break-inside($action: null) {
+  @include class-attr(break-inside, auto, auto, $action);
+  @include class-attr(break-inside, avoid, avoid, $action);
+  @include class-attr(break-inside, avoid-column, avoid-column, $action);
+  @include class-attr(break-inside, avoid-page, avoid-page, $action);
+  @include class-attr(break-inside, avoid-region, avoid-region, $action);
+}

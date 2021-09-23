@@ -1,0 +1,4 @@
+@mixin transition-property($action: null) {
+  @include class-attr(transition-property, none, none, $action);
+  @include class-attr(transition-property, all, all, $action);
+}

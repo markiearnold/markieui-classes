@@ -1,0 +1,33 @@
+$className: z;
+
+@import "mixins";
+
+.#{$className} {
+  @include z-index;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include z-index($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include z-index;
+}
+
+@include screen-md($className) {
+  @include z-index;
+}
+
+@include screen-lg($className) {
+  @include z-index;
+}
+
+@include screen-xl($className) {
+  @include z-index;
+}
+
+@include screen-2xl($className) {
+  @include z-index;
+}

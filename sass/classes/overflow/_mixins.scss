@@ -1,0 +1,6 @@
+@mixin overflow($action: null) {
+  @include class-attr(overflow, visible, visible, $action);
+  @include class-attr(overflow, hidden, hidden, $action);
+  @include class-attr(overflow, scroll, scroll, $action);
+  @include class-attr(overflow, auto, auto, $action);
+}

@@ -1,0 +1,5 @@
+@mixin float($action: null) {
+  @include class-attr(float, none, none, $action);
+  @include class-attr(float, left, left, $action);
+  @include class-attr(float, right, right, $action);
+}

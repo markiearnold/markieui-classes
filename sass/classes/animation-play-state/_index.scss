@@ -1,0 +1,33 @@
+$className: anim;
+
+@import "mixins";
+
+.#{$className} {
+  @include animation-play-state;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include animation-play-state($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include animation-play-state;
+}
+
+@include screen-md($className) {
+  @include animation-play-state;
+}
+
+@include screen-lg($className) {
+  @include animation-play-state;
+}
+
+@include screen-xl($className) {
+  @include animation-play-state;
+}
+
+@include screen-2xl($className) {
+  @include animation-play-state;
+}

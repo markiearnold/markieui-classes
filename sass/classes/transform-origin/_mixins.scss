@@ -1,0 +1,7 @@
+@mixin transform-origin($action: null) {
+  @include class-attr(transform-origin, left, left, $action);
+  @include class-attr(transform-origin, center, center, $action);
+  @include class-attr(transform-origin, right, right, $action);
+  @include class-attr(transform-origin, top, top, $action);
+  @include class-attr(transform-origin, bottom, bottom, $action);
+}

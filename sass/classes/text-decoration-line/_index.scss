@@ -1,0 +1,33 @@
+$className: text-decoration;
+
+@import "mixins";
+
+.#{$className} {
+  @include text-decoration-line;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include text-decoration-line($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include text-decoration-line;
+}
+
+@include screen-md($className) {
+  @include text-decoration-line;
+}
+
+@include screen-lg($className) {
+  @include text-decoration-line;
+}
+
+@include screen-xl($className) {
+  @include text-decoration-line;
+}
+
+@include screen-2xl($className) {
+  @include text-decoration-line;
+}

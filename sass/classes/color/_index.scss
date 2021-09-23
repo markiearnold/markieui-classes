@@ -1,0 +1,33 @@
+$className: text;
+
+@import "mixins";
+
+.#{$className} {
+  @include color;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include color($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include color;
+}
+
+@include screen-md($className) {
+  @include color;
+}
+
+@include screen-lg($className) {
+  @include color;
+}
+
+@include screen-xl($className) {
+  @include color;
+}
+
+@include screen-2xl($className) {
+  @include color;
+}

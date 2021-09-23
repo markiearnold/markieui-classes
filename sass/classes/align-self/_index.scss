@@ -1,0 +1,33 @@
+$className: self;
+
+@import "mixins";
+
+.#{$className} {
+  @include align-self;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include align-self($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include align-self;
+}
+
+@include screen-md($className) {
+  @include align-self;
+}
+
+@include screen-lg($className) {
+  @include align-self;
+}
+
+@include screen-xl($className) {
+  @include align-self;
+}
+
+@include screen-2xl($className) {
+  @include align-self;
+}

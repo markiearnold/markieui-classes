@@ -1,0 +1,6 @@
+@mixin text-align($action: null) {
+  @include class-attr(text-align, left, left, $action);
+  @include class-attr(text-align, right, right, $action);
+  @include class-attr(text-align, center, center, $action);
+  @include class-attr(text-align, justify, justify, $action);
+}

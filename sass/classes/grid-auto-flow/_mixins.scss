@@ -1,0 +1,7 @@
+@mixin grid-auto-flow($action: null) {
+  @include class-attr(grid-auto-flow, row, row, $action);
+  @include class-attr(grid-auto-flow, column, column, $action);
+  @include class-attr(grid-auto-flow, dense, dense, $action);
+  @include class-attr(grid-auto-flow, row-dense, row-dense, $action);
+  @include class-attr(grid-auto-flow, column-dense, column-dense, $action);
+}

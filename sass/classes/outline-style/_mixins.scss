@@ -1,0 +1,12 @@
+@mixin outline-style($action: null) {
+  @include class-attr(outline-style, none, none, $action);
+  @include class-attr(outline-style, hidden, hidden, $action);
+  @include class-attr(outline-style, dotted, dotted, $action);
+  @include class-attr(outline-style, dashed, dashed, $action);
+  @include class-attr(outline-style, solid, solid, $action);
+  @include class-attr(outline-style, double, double, $action);
+  @include class-attr(outline-style, groove, groove, $action);
+  @include class-attr(outline-style, ridge, ridge, $action);
+  @include class-attr(outline-style, inset, inset, $action);
+  @include class-attr(outline-style, outset, outset, $action);
+}

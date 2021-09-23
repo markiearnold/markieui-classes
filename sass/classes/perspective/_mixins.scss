@@ -1,0 +1,3 @@
+@mixin perspective($action: null) {
+  @include class-attr(perspective, none, none, $action);
+}

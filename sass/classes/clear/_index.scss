@@ -1,0 +1,33 @@
+$className: clear;
+
+@import "mixins";
+
+.#{$className} {
+  @include clear;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include clear($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include clear;
+}
+
+@include screen-md($className) {
+  @include clear;
+}
+
+@include screen-lg($className) {
+  @include clear;
+}
+
+@include screen-xl($className) {
+  @include clear;
+}
+
+@include screen-2xl($className) {
+  @include clear;
+}

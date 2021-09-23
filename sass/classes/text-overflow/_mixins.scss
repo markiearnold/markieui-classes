@@ -1,0 +1,4 @@
+@mixin text-overflow($action: null) {
+  @include class-attr(text-overflow, clip, clip, $action);
+  @include class-attr(text-overflow, ellipsis, ellipsis, $action);
+}

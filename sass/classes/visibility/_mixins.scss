@@ -1,0 +1,5 @@
+@mixin visibility($action: null) {
+  @include class-attr(visibility, visible, visible, $action);
+  @include class-attr(visibility, hidden, hidden, $action);
+  @include class-attr(visibility, collapse, collapse, $action);
+}

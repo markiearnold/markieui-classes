@@ -1,0 +1,33 @@
+$className: transition-property;
+
+@import "mixins";
+
+.#{$className} {
+  @include transition-property;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include transition-property($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include transition-property;
+}
+
+@include screen-md($className) {
+  @include transition-property;
+}
+
+@include screen-lg($className) {
+  @include transition-property;
+}
+
+@include screen-xl($className) {
+  @include transition-property;
+}
+
+@include screen-2xl($className) {
+  @include transition-property;
+}

@@ -1,0 +1,33 @@
+$className: perspective-origin;
+
+@import "mixins";
+
+.#{$className} {
+  @include perspective-origin;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include perspective-origin($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include perspective-origin;
+}
+
+@include screen-md($className) {
+  @include perspective-origin;
+}
+
+@include screen-lg($className) {
+  @include perspective-origin;
+}
+
+@include screen-xl($className) {
+  @include perspective-origin;
+}
+
+@include screen-2xl($className) {
+  @include perspective-origin;
+}

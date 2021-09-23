@@ -1,0 +1,33 @@
+$className: bg-origin;
+
+@import "mixins";
+
+.#{$className} {
+  @include background-origin;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include background-origin($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include background-origin;
+}
+
+@include screen-md($className) {
+  @include background-origin;
+}
+
+@include screen-lg($className) {
+  @include background-origin;
+}
+
+@include screen-xl($className) {
+  @include background-origin;
+}
+
+@include screen-2xl($className) {
+  @include background-origin;
+}

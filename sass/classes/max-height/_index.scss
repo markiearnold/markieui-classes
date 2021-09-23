@@ -1,0 +1,33 @@
+$className: max-h;
+
+@import "mixins";
+
+.#{$className} {
+  @include max-height;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include max-height($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include max-height;
+}
+
+@include screen-md($className) {
+  @include max-height;
+}
+
+@include screen-lg($className) {
+  @include max-height;
+}
+
+@include screen-xl($className) {
+  @include max-height;
+}
+
+@include screen-2xl($className) {
+  @include max-height;
+}

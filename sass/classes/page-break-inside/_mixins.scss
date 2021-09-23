@@ -1,0 +1,5 @@
+@mixin page-break-inside($action: null) {
+  @include class-attr(page-break-inside, auto, auto, $action);
+  @include class-attr(page-break-inside, avoid, avoid, $action);
+  @include class-attr(page-break-inside, right, right, $action);
+}

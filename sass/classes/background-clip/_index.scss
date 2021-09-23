@@ -1,0 +1,33 @@
+$className: bg-clip;
+
+@import "mixins";
+
+.#{$className} {
+  @include background-clip;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include background-clip($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include background-clip;
+}
+
+@include screen-md($className) {
+  @include background-clip;
+}
+
+@include screen-lg($className) {
+  @include background-clip;
+}
+
+@include screen-xl($className) {
+  @include background-clip;
+}
+
+@include screen-2xl($className) {
+  @include background-clip;
+}

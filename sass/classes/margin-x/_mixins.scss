@@ -1,0 +1,42 @@
+// Cannot use class-attr mixin due to multiple attributes.
+
+@mixin margin-x($action: null) {
+  &-auto {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  @each $index, $value in $spacing {
+    @if $action == "before" {
+      &-#{$index} {
+        &::before {
+          content: "";
+          margin-left: $value;
+          margin-right: $value;
+        }
+      }
+    } @else {
+      @if $action == "after" {
+        &::after {
+          content: "";
+          margin-left: $value;
+          margin-right: $value;
+        }
+      } @else {
+        @if $action {
+          &-#{$index} {
+            &:#{$action} {
+              margin-left: $value;
+              margin-right: $value;
+            }
+          }
+        } @else {
+          &-#{$index} {
+            margin-left: $value;
+            margin-right: $value;
+          }
+        }
+      }
+    }
+  }
+}

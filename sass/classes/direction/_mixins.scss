@@ -1,0 +1,4 @@
+@mixin direction($action: null) {
+  @include class-attr(direction, ltr, ltr, $action);
+  @include class-attr(direction, rtl, rtl, $action);
+}

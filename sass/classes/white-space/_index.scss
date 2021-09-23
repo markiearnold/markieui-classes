@@ -1,0 +1,33 @@
+$className: white-space;
+
+@import "mixins";
+
+.#{$className} {
+  @include white-space;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include white-space($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include white-space;
+}
+
+@include screen-md($className) {
+  @include white-space;
+}
+
+@include screen-lg($className) {
+  @include white-space;
+}
+
+@include screen-xl($className) {
+  @include white-space;
+}
+
+@include screen-2xl($className) {
+  @include white-space;
+}

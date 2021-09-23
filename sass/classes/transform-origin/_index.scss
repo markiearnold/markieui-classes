@@ -1,0 +1,33 @@
+$className: transform-origin;
+
+@import "mixins";
+
+.#{$className} {
+  @include transform-origin;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include transform-origin($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include transform-origin;
+}
+
+@include screen-md($className) {
+  @include transform-origin;
+}
+
+@include screen-lg($className) {
+  @include transform-origin;
+}
+
+@include screen-xl($className) {
+  @include transform-origin;
+}
+
+@include screen-2xl($className) {
+  @include transform-origin;
+}

@@ -1,0 +1,7 @@
+@mixin line-height($action: null) {
+  @include class-attr(line-height, normal, normal, $action);
+
+  @each $index, $value in $line-height {
+    @include class-attr(line-height, $value, $index, $action);
+  }
+}

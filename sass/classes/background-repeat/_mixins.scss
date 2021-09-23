@@ -1,0 +1,8 @@
+@mixin background-repeat($action: null) {
+  @include class-attr(background-repeat, repeat, repeat, $action);
+  @include class-attr(background-repeat, repeat-x, repeat-x, $action);
+  @include class-attr(background-repeat, repeat-y, repeat-y, $action);
+  @include class-attr(background-repeat, no-repeat, no-repeat, $action);
+  @include class-attr(background-repeat, space, space, $action);
+  @include class-attr(background-repeat, round, round, $action);
+}

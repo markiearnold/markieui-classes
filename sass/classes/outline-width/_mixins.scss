@@ -1,0 +1,5 @@
+@mixin outline-width($action: null) {
+  @include class-attr(outline-width, medium, medium, $action);
+  @include class-attr(outline-width, thin, thin, $action);
+  @include class-attr(outline-width, thick, thick, $action);
+}

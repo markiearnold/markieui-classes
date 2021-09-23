@@ -1,0 +1,33 @@
+$className: hanging-punctuation;
+
+@import "mixins";
+
+.#{$className} {
+  @include hanging-punctuation;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include hanging-punctuation($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include hanging-punctuation;
+}
+
+@include screen-md($className) {
+  @include hanging-punctuation;
+}
+
+@include screen-lg($className) {
+  @include hanging-punctuation;
+}
+
+@include screen-xl($className) {
+  @include hanging-punctuation;
+}
+
+@include screen-2xl($className) {
+  @include hanging-punctuation;
+}

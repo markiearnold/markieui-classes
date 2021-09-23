@@ -1,0 +1,33 @@
+$className: backface;
+
+@import "mixins";
+
+.#{$className} {
+  @include backface-visibility;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include backface-visibility($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include backface-visibility;
+}
+
+@include screen-md($className) {
+  @include backface-visibility;
+}
+
+@include screen-lg($className) {
+  @include backface-visibility;
+}
+
+@include screen-xl($className) {
+  @include backface-visibility;
+}
+
+@include screen-2xl($className) {
+  @include backface-visibility;
+}

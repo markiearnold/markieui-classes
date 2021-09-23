@@ -1,0 +1,33 @@
+$className: cursor;
+
+@import "mixins";
+
+.#{$className} {
+  @include cursor;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include cursor($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include cursor;
+}
+
+@include screen-md($className) {
+  @include cursor;
+}
+
+@include screen-lg($className) {
+  @include cursor;
+}
+
+@include screen-xl($className) {
+  @include cursor;
+}
+
+@include screen-2xl($className) {
+  @include cursor;
+}

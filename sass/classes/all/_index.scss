@@ -1,0 +1,33 @@
+$className: all;
+
+@import "mixins";
+
+.#{$className} {
+  @include all;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include all($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include all;
+}
+
+@include screen-md($className) {
+  @include all;
+}
+
+@include screen-lg($className) {
+  @include all;
+}
+
+@include screen-xl($className) {
+  @include all;
+}
+
+@include screen-2xl($className) {
+  @include all;
+}

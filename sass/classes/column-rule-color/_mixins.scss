@@ -1,0 +1,12 @@
+@mixin column-rule-color($action: null) {
+  @include class-attr(column-rule-color, $white, white, $action);
+  @include class-attr(column-rule-color, $black, black, $action);
+
+  @each $color, $array in $colors {
+    &-#{$color} {
+      @each $index, $value in $array {
+        @include class-attr(column-rule-color, $value, $index, $action);
+      }
+    }
+  }
+}

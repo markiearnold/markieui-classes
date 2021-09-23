@@ -1,0 +1,5 @@
+@mixin all($action: null) {
+  @include class-attr(all, initial, initial, $action);
+  @include class-attr(all, inherit, inherit, $action);
+  @include class-attr(all, unset, unset, $action);
+}

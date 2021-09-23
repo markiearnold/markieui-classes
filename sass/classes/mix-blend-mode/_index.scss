@@ -1,0 +1,33 @@
+$className: mix;
+
+@import "mixins";
+
+.#{$className} {
+  @include mix-blend-mode;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include mix-blend-mode($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include mix-blend-mode;
+}
+
+@include screen-md($className) {
+  @include mix-blend-mode;
+}
+
+@include screen-lg($className) {
+  @include mix-blend-mode;
+}
+
+@include screen-xl($className) {
+  @include mix-blend-mode;
+}
+
+@include screen-2xl($className) {
+  @include mix-blend-mode;
+}

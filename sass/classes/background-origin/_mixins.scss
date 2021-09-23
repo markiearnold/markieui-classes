@@ -1,0 +1,5 @@
+@mixin background-origin($action: null) {
+  @include class-attr(background-origin, border-box, border-box, $action);
+  @include class-attr(background-origin, padding-box, padding-box, $action);
+  @include class-attr(background-origin, content-box, content-box, $action);
+}

@@ -1,0 +1,33 @@
+$className: font;
+
+@import "mixins";
+
+.#{$className} {
+  @include font-stretch;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include font-stretch($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include font-stretch;
+}
+
+@include screen-md($className) {
+  @include font-stretch;
+}
+
+@include screen-lg($className) {
+  @include font-stretch;
+}
+
+@include screen-xl($className) {
+  @include font-stretch;
+}
+
+@include screen-2xl($className) {
+  @include font-stretch;
+}

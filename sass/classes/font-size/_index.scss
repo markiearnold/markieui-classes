@@ -1,0 +1,33 @@
+$className: text;
+
+@import "mixins";
+
+.#{$className} {
+  @include font-size;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include font-size($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include font-size;
+}
+
+@include screen-md($className) {
+  @include font-size;
+}
+
+@include screen-lg($className) {
+  @include font-size;
+}
+
+@include screen-xl($className) {
+  @include font-size;
+}
+
+@include screen-2xl($className) {
+  @include font-size;
+}

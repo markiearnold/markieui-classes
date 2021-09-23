@@ -1,0 +1,4 @@
+@mixin isolation($action: null) {
+  @include class-attr(isolation, auto, auto, $action);
+  @include class-attr(isolation, isolate, isolate, $action);
+}

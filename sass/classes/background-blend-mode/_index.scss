@@ -1,0 +1,33 @@
+$className: bg-blend;
+
+@import "mixins";
+
+.#{$className} {
+  @include background-blend-mode;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include background-blend-mode($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include background-blend-mode;
+}
+
+@include screen-md($className) {
+  @include background-blend-mode;
+}
+
+@include screen-lg($className) {
+  @include background-blend-mode;
+}
+
+@include screen-xl($className) {
+  @include background-blend-mode;
+}
+
+@include screen-2xl($className) {
+  @include background-blend-mode;
+}

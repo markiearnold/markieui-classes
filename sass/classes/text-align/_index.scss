@@ -1,0 +1,33 @@
+$className: text-align;
+
+@import "mixins";
+
+.#{$className} {
+  @include text-align;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include text-align($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include text-align;
+}
+
+@include screen-md($className) {
+  @include text-align;
+}
+
+@include screen-lg($className) {
+  @include text-align;
+}
+
+@include screen-xl($className) {
+  @include text-align;
+}
+
+@include screen-2xl($className) {
+  @include text-align;
+}

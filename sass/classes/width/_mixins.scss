@@ -1,0 +1,14 @@
+@mixin width($action: null) {
+  @include class-attr(width, auto, auto, $action);
+  @include class-attr(width, 100vw, screen, $action);
+  @include class-attr(width, min-content, min, $action);
+  @include class-attr(width, max-content, max, $action);
+
+  @each $index, $value in $spacing {
+    @include class-attr(width, $value, $index, $action);
+  }
+
+  @each $index, $value in $sizing {
+    @include class-attr(width, $value, $index, $action);
+  }
+}

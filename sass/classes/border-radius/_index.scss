@@ -1,0 +1,33 @@
+$className: rounded;
+
+@import "mixins";
+
+.#{$className} {
+  @include border-radius;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include border-radius($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include border-radius;
+}
+
+@include screen-md($className) {
+  @include border-radius;
+}
+
+@include screen-lg($className) {
+  @include border-radius;
+}
+
+@include screen-xl($className) {
+  @include border-radius;
+}
+
+@include screen-2xl($className) {
+  @include border-radius;
+}

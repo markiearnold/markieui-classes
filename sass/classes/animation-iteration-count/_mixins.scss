@@ -1,0 +1,7 @@
+@mixin animation-iteration-count($action: null) {
+  @include class-attr(animation-iteration-count, infinite, infinite, $action);
+
+  @each $index, $value in $animation-iteration-count {
+    @include class-attr(animation-iteration-count, $index, $index, $action);
+  }
+}

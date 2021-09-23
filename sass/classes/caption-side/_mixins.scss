@@ -1,0 +1,4 @@
+@mixin caption-side($action: null) {
+  @include class-attr(caption-side, top, top, $action);
+  @include class-attr(caption-side, bottom, bottom, $action);
+}

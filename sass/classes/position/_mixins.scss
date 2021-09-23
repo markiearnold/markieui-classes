@@ -1,0 +1,8 @@
+@mixin position($action: null) {
+  @include class-attr(position, static, static, $action);
+  @include class-attr(position, absolute, absolute, $action);
+  @include class-attr(position, fixed, fixed, $action);
+  @include class-attr(position, relative, relative, $action);
+  @include class-attr(position, sticky, sticky, $action);
+  @include class-attr(position, -webkit-sticky, sticky, $action);
+}

@@ -1,0 +1,7 @@
+@mixin page-break-before($action: null) {
+  @include class-attr(page-break-before, auto, auto, $action);
+  @include class-attr(page-break-before, always, always, $action);
+  @include class-attr(page-break-before, avoid, avoid, $action);
+  @include class-attr(page-break-before, left, left, $action);
+  @include class-attr(page-break-before, right, right, $action);
+}

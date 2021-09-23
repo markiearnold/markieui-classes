@@ -1,0 +1,33 @@
+$className: min-h;
+
+@import "mixins";
+
+.#{$className} {
+  @include min-height;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include min-height($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include min-height;
+}
+
+@include screen-md($className) {
+  @include min-height;
+}
+
+@include screen-lg($className) {
+  @include min-height;
+}
+
+@include screen-xl($className) {
+  @include min-height;
+}
+
+@include screen-2xl($className) {
+  @include min-height;
+}

@@ -1,0 +1,12 @@
+@mixin color($action: null) {
+  @include class-attr(color, $white, white, $action);
+  @include class-attr(color, $black, black, $action);
+
+  @each $color, $array in $colors {
+    &-#{$color} {
+      @each $index, $value in $array {
+        @include class-attr(color, $value, $index, $action);
+      }
+    }
+  }
+}

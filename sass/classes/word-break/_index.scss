@@ -1,0 +1,33 @@
+$className: word-break;
+
+@import "mixins";
+
+.#{$className} {
+  @include word-break;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include word-break($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include word-break;
+}
+
+@include screen-md($className) {
+  @include word-break;
+}
+
+@include screen-lg($className) {
+  @include word-break;
+}
+
+@include screen-xl($className) {
+  @include word-break;
+}
+
+@include screen-2xl($className) {
+  @include word-break;
+}

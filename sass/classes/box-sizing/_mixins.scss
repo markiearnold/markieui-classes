@@ -1,0 +1,4 @@
+@mixin box-sizing($action: null) {
+  @include class-attr(box-sizing, border-box, border, $action);
+  @include class-attr(box-sizing, content-box, content, $action);
+}

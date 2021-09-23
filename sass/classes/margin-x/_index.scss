@@ -1,0 +1,33 @@
+$className: mx;
+
+@import "mixins";
+
+.#{$className} {
+  @include margin-x;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include margin-x($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include margin-x;
+}
+
+@include screen-md($className) {
+  @include margin-x;
+}
+
+@include screen-lg($className) {
+  @include margin-x;
+}
+
+@include screen-xl($className) {
+  @include margin-x;
+}
+
+@include screen-2xl($className) {
+  @include margin-x;
+}

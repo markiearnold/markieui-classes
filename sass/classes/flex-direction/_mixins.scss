@@ -1,0 +1,6 @@
+@mixin flex-direction($action: null) {
+  @include class-attr(flex-direction, row, row, $action);
+  @include class-attr(flex-direction, row-reverse, row-reverse, $action);
+  @include class-attr(flex-direction, column, column, $action);
+  @include class-attr(flex-direction, column-reverse, column-reverse, $action);
+}

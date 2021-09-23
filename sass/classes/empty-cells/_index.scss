@@ -1,0 +1,33 @@
+$className: empty-cells;
+
+@import "mixins";
+
+.#{$className} {
+  @include empty-cells;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include empty-cells($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include empty-cells;
+}
+
+@include screen-md($className) {
+  @include empty-cells;
+}
+
+@include screen-lg($className) {
+  @include empty-cells;
+}
+
+@include screen-xl($className) {
+  @include empty-cells;
+}
+
+@include screen-2xl($className) {
+  @include empty-cells;
+}

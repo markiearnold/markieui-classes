@@ -1,0 +1,6 @@
+@mixin animation-fill-mode($action: null) {
+  @include class-attr(animation-fill-mode, none, none, $action);
+  @include class-attr(animation-fill-mode, forwards, forwards, $action);
+  @include class-attr(animation-fill-mode, backwards, backwards, $action);
+  @include class-attr(animation-fill-mode, both, both, $action);
+}

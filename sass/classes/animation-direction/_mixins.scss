@@ -1,0 +1,11 @@
+@mixin animation-direction($action: null) {
+  @include class-attr(animation-direction, normal, normal, $action);
+  @include class-attr(animation-direction, reverse, reverse, $action);
+  @include class-attr(animation-direction, alternate, alt, $action);
+  @include class-attr(
+    animation-direction,
+    alternate-reverse,
+    alt-reverse,
+    $action
+  );
+}

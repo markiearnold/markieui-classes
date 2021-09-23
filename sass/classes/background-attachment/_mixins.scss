@@ -1,0 +1,5 @@
+@mixin background-attachment($action: null) {
+  @include class-attr(background-attachment, scroll, scroll, $action);
+  @include class-attr(background-attachment, fixed, fixed, $action);
+  @include class-attr(background-attachment, local, local, $action);
+}

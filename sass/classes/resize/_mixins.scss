@@ -1,0 +1,6 @@
+@mixin resize($action: null) {
+  @include class-attr(resize, both, both, $action);
+  @include class-attr(resize, none, none, $action);
+  @include class-attr(resize, horizontal, horizontal, $action);
+  @include class-attr(resize, vertical, vertical, $action);
+}

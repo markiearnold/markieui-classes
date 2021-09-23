@@ -1,0 +1,7 @@
+@mixin left($action: null) {
+  @include class-attr(left, auto, auto, $action);
+
+  @each $index, $value in $spacing {
+    @include class-attr(left, $value, $index, $action);
+  }
+}

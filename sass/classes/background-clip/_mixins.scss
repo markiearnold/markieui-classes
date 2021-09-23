@@ -1,0 +1,5 @@
+@mixin background-clip($action: null) {
+  @include class-attr(background-clip, border-box, border-box, $action);
+  @include class-attr(background-clip, padding-box, padding-box, $action);
+  @include class-attr(background-clip, content-box, content-box, $action);
+}

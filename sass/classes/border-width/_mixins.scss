@@ -1,0 +1,7 @@
+@mixin border-width($action: null) {
+  @include class-attr(border-width, $border_width_1, null, $action);
+
+  @each $index, $value in $border_width {
+    @include class-attr(border-width, $value, $index, $action);
+  }
+}

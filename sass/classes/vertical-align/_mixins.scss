@@ -1,0 +1,10 @@
+@mixin vertical-align($action: null) {
+  @include class-attr(vertical-align, baseline, baseline, $action);
+  @include class-attr(vertical-align, sub, sub, $action);
+  @include class-attr(vertical-align, super, super, $action);
+  @include class-attr(vertical-align, top, top, $action);
+  @include class-attr(vertical-align, text-top, text-top, $action);
+  @include class-attr(vertical-align, middle, middle, $action);
+  @include class-attr(vertical-align, bottom, bottom, $action);
+  @include class-attr(vertical-align, text-bottom, text-bottom, $action);
+}

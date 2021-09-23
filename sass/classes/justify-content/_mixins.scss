@@ -1,0 +1,8 @@
+@mixin justify-content($action: null) {
+  @include class-attr(justify-content, flex-start, start, $action);
+  @include class-attr(justify-content, flex-end, end, $action);
+  @include class-attr(justify-content, center, center, $action);
+  @include class-attr(justify-content, space-between, between, $action);
+  @include class-attr(justify-content, space-around, around, $action);
+  @include class-attr(justify-content, space-evenly, evenly, $action);
+}

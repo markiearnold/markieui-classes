@@ -1,0 +1,33 @@
+$className: col-span;
+
+@import "mixins";
+
+.#{$className} {
+  @include column-span;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include column-span($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include column-span;
+}
+
+@include screen-md($className) {
+  @include column-span;
+}
+
+@include screen-lg($className) {
+  @include column-span;
+}
+
+@include screen-xl($className) {
+  @include column-span;
+}
+
+@include screen-2xl($className) {
+  @include column-span;
+}

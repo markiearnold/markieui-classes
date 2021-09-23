@@ -1,0 +1,5 @@
+@mixin hyphens($action: null) {
+  @include class-attr(hyphens, none, none, $action);
+  @include class-attr(hyphens, manual, manual, $action);
+  @include class-attr(hyphens, auto, auto, $action);
+}

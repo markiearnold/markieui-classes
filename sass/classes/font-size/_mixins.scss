@@ -1,0 +1,37 @@
+// Cannot use class-attr mixin due to multiple attributes.
+
+@mixin font-size($action: null) {
+  @each $index, $font_size, $line_height in $font_style {
+    @if $action == "before" {
+      &-#{$index} {
+        &::before {
+          content: "";
+          font-size: $font_size;
+          line-height: $line_height;
+        }
+      }
+    } @else {
+      @if $action == "after" {
+        &::after {
+          content: "";
+          font-size: $font_size;
+          line-height: $line_height;
+        }
+      } @else {
+        @if $action {
+          &-#{$index} {
+            &:#{$action} {
+              font-size: $font_size;
+              line-height: $line_height;
+            }
+          }
+        } @else {
+          &-#{$index} {
+            font-size: $font_size;
+            line-height: $line_height;
+          }
+        }
+      }
+    }
+  }
+}

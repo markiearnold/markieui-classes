@@ -1,0 +1,33 @@
+$className: max-w;
+
+@import "mixins";
+
+.#{$className} {
+  @include max-width;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include max-width($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include max-width;
+}
+
+@include screen-md($className) {
+  @include max-width;
+}
+
+@include screen-lg($className) {
+  @include max-width;
+}
+
+@include screen-xl($className) {
+  @include max-width;
+}
+
+@include screen-2xl($className) {
+  @include max-width;
+}

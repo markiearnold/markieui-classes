@@ -1,0 +1,33 @@
+$className: anim;
+
+@import "mixins";
+
+.#{$className} {
+  @include animation-duration;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include animation-duration($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include animation-duration;
+}
+
+@include screen-md($className) {
+  @include animation-duration;
+}
+
+@include screen-lg($className) {
+  @include animation-duration;
+}
+
+@include screen-xl($className) {
+  @include animation-duration;
+}
+
+@include screen-2xl($className) {
+  @include animation-duration;
+}

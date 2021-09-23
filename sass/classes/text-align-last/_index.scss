@@ -1,0 +1,33 @@
+$className: text-align-last;
+
+@import "mixins";
+
+.#{$className} {
+  @include text-align-last;
+}
+
+@each $index, $value in $actions {
+  .#{$index}__#{$className} {
+    @include text-align-last($value);
+  }
+}
+
+@include screen-sm($className) {
+  @include text-align-last;
+}
+
+@include screen-md($className) {
+  @include text-align-last;
+}
+
+@include screen-lg($className) {
+  @include text-align-last;
+}
+
+@include screen-xl($className) {
+  @include text-align-last;
+}
+
+@include screen-2xl($className) {
+  @include text-align-last;
+}
